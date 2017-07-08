@@ -16,3 +16,38 @@
   opacity: 0.65;
   box-shadow: none;
 }
+
+.btn.btn-yellow {
+  background-color: #990;
+  color: white;
+}
+
+.btn.btn-blue {
+  background-color: #33a;
+  color: white;
+}
+
+.btn.btn-green {
+  background-color: #3c3;
+  color: white;
+}
+
+.btn.btn-purple {
+  background-color: #939;
+  color: white;
+}
+
+.btn.btn-pink {
+  background-color: #c69;
+  color: white;
+}
+
+.btn.btn-orange {
+  background-color: #f93;
+  color: white;
+}
+
+.btn.btn-brown {
+  background-color: #952;
+  color: white;
+}
