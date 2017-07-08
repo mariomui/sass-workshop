@@ -1,0 +1,15 @@
+
+$mylist: 5 10 15 20 25;
+$secondletter: t b l r;
+$firstletter: m p;
+
+@each $f in $firstletter { 
+  @each $a in $secondletter {
+    @each $i in $mylist{
+      .#{$f}-#{$a}-#{$i} {
+          margin: #{$i}px;
+          padding: #{$i}px;
+      }
+    }
+  }
+}
