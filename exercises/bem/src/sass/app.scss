@@ -1,3 +1,20 @@
+@mixin btn_theme($bc, $opac:.5) {
+    background-color: $bc;
+    .btn__price{
+      color: white;
+      background-color: green;
+      padding: 1px 3px 1px 3px;
+    }
+
+    &:disabled {
+      opacity: $opac;
+      .btn__price{
+        background-color: #aaaaaa;
+      }
+    }
+}
+
+
 body {
     h1 {
     color: #c69;
@@ -10,4 +27,13 @@ body {
   border-width: 1px;
   line-height: 20px;
   border-radius: 2px;
+
+    &.btn--mode-primary {
+      color: rgb(255, 255, 255);
+      @include btn_theme(rgb(204,68,102));
+      }
+    
+    &.btn--mode-secondary {
+      @include btn_theme(rgb(237,188,200));
+    }
 }
