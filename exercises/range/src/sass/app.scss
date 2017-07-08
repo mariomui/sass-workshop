@@ -3,4 +3,108 @@
 
 input[type="range"] {
   // Add your styles here
+    -webkit-appearance: none;
+    margin: 18px 0;
+    width: 100%;
+    &:focus {
+    outline: none;
+  }
+/*  &::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 8.4px;
+    cursor: pointer;
+    animate: 0.2s;
+    box-shadow: $range-shadow;
+    background: #3071a9;
+    border-radius: 1.3px;
+  }*/
+  /* &::-moz-range-track {
+      width: 100%;
+      height: 8.4px;
+      cursor: pointer;
+      animate: 0.2s;
+      box-shadow: $range-shadow;
+      background: #3071a9;
+      border-radius: 1.3px;*/
+  @include range-track() {
+    width: 100%;
+    height: 8.4px;
+    cursor: pointer;
+    animate: 0.2s;
+    box-shadow: $range-shadow;
+    background: #3071a9;
+    border-radius: 1.3px;
+    border: $black-border-pt2;
+  }
+  &:focus::-webkit-slider-runnable-track {
+    background: #367ebd;
+  }
+    &::-ms-track {
+    width: 100%;
+    height: 8.4px;
+    cursor: pointer;
+    animate: 0.2s;
+    background: transparent;
+    border-color: transparent;
+    border-width: 16px 0;
+    color: transparent;
+  }
+
+  &::-webkit-slider-thumb {
+    box-shadow: $range-shadow;
+    border: $black-border-uno;
+    height: 36px;
+    width: 16px;
+    border-radius: 3px;
+    background: #ffffff;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -14px;
+  }
+  &::-moz-range-thumb {
+    box-shadow: $range-shadow;
+    border: $black-border-uno;
+    height: 36px;
+    width: 16px;
+    border-radius: 3px;
+    background: #ffffff;
+    cursor: pointer;
+  }
+    &::-ms-thumb {
+    box-shadow: $range-shadow;
+    border: $black-border-uno;
+    height: 36px;
+    width: 16px;
+    border-radius: 3px;
+    background: #ffffff;
+    cursor: pointer;
+  }
+
+
+
+  @include ms-fill-lower-upper(){
+    border: $black-border-pt2;
+    border-radius: 2.6px;
+    box-shadow: $range-shadow;
+  };
+
+  &::-ms-fill-lower {
+    background: #2a6495;
+    // border: $black-border-pt2;
+    // border-radius: 2.6px;
+    // box-shadow: $range-shadow;
+  }
+  &::-ms-fill-upper {
+    background: #3071a9;
+    // border: $black-border-pt2;
+    // border-radius: 2.6px;
+    // box-shadow: $range-shadow;
+  }
+
+  &:focus::-ms-fill-lower {
+    background: #3071a9;
+  }
+  &:focus::-ms-fill-upper {
+    background: #367ebd;
+  }
 }
