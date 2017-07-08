@@ -3,6 +3,8 @@
   width: 100%;
   margin: auto;
   background: #eee;
+  
+  
 
   .sidebar,
   .main { padding: 10px; }
@@ -16,5 +18,20 @@
   .sidebar {
     width: 200px;
     float: left;
+  }
+  &.right-nav {
+    .main {
+      border-right: 2px solid #333;
+      border-left: 0px;
+      margin-left: 0px;
+      margin-right: 220px;
+      
+    }
+    .sidebar {
+
+      float: right;
+      
+    }
+
   }
 }
