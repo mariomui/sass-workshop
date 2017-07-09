@@ -10,39 +10,39 @@ body h1 {
   border-radius: 2px;
 }
 
-.btn.btn--mode-primary {
+.btn--mode-primary {
   color: white;
   background-color: #cc4466;
 }
 
-.btn.btn--mode-primary .btn__price {
+.btn--mode-primary .btn__price {
   color: white;
   background-color: green;
   padding: 1px 3px 1px 3px;
 }
 
-.btn.btn--mode-primary:disabled {
+.btn--mode-primary:disabled {
   opacity: 0.5;
 }
 
-.btn.btn--mode-primary:disabled .btn__price {
+.btn--mode-primary:disabled .btn__price {
   background-color: #aaaaaa;
 }
 
-.btn.btn--mode-secondary {
+.btn--mode-secondary {
   background-color: #edbcc8;
 }
 
-.btn.btn--mode-secondary .btn__price {
+.btn--mode-secondary .btn__price {
   color: white;
   background-color: green;
   padding: 1px 3px 1px 3px;
 }
 
-.btn.btn--mode-secondary:disabled {
+.btn--mode-secondary:disabled {
   opacity: 0.5;
 }
 
-.btn.btn--mode-secondary:disabled .btn__price {
+.btn--mode-secondary:disabled .btn__price {
   background-color: #aaaaaa;
 }

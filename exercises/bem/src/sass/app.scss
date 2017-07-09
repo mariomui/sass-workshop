@@ -28,12 +28,12 @@ body {
   line-height: 20px;
   border-radius: 2px;
 
-    &.btn--mode-primary {
+    &--mode-primary {
       color: rgb(255, 255, 255);
       @include btn_theme(rgb(204,68,102));
       }
     
-    &.btn--mode-secondary {
+    &--mode-secondary {
       @include btn_theme(rgb(237,188,200));
     }
 }

@@ -1,5 +1,35 @@
+%danger{
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 2px;
+  padding-top: 2px;
+  border-radius: 2px;
+  border-style: solid;
+
+}
+
 body {
-    h1 {
-    color: #c69;
+  h1 {
+  color: #c69;
+  }
+  .btn {
+
+    &.btn-primary {
+      @extend %danger;
+      &:disabled {
+        opacity: .5;
+      }
+    }
+    &.btn-secondary {
+      @extend %danger;
+      background-color: rgb(237, 188, 200);
+      color:rgb(0, 0, 0);
+
+      &:disabled {
+        opacity: .5;
+      }
+
+    }
+    
   }
 }

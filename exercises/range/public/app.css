@@ -13,23 +13,6 @@ input[type="range"] {
   -webkit-appearance: none;
   margin: 18px 0;
   width: 100%;
-  /*  &::-webkit-slider-runnable-track {
-    width: 100%;
-    height: 8.4px;
-    cursor: pointer;
-    animate: 0.2s;
-    box-shadow: $range-shadow;
-    background: #3071a9;
-    border-radius: 1.3px;
-  }*/
-  /* &::-moz-range-track {
-      width: 100%;
-      height: 8.4px;
-      cursor: pointer;
-      animate: 0.2s;
-      box-shadow: $range-shadow;
-      background: #3071a9;
-      border-radius: 1.3px;*/
 }
 
 input[type="range"]:focus {

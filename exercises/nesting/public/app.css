@@ -12,7 +12,7 @@ body .btn:disabled {
   opacity: .5;
 }
 
-body .btn.btn-primary {
+body .btn-primary {
   color: white;
   background: #c46;
 }
