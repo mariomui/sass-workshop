@@ -1,25 +1,23 @@
 body .btn.btn-primary, body .btn.btn-secondary {
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 2px;
-  padding-top: 2px;
+  padding: 2px 10px;
   border-radius: 2px;
   border-style: solid;
+}
+
+body .btn.btn-primary:disabled, body .btn.btn-secondary:disabled {
+  opacity: .5;
 }
 
 body h1 {
   color: #c69;
 }
 
-body .btn.btn-primary:disabled {
-  opacity: .5;
+body .btn.btn-primary {
+  background-color: #cc4466;
+  color: white;
 }
 
 body .btn.btn-secondary {
   background-color: #edbcc8;
   color: black;
-}
-
-body .btn.btn-secondary:disabled {
-  opacity: .5;
 }
