@@ -26,10 +26,28 @@
     );
   }
 }
-
+@function linearrgb($c){
+     $a: .055;
+    $thresh: .04045;
+    @if $c<=$thresh {
+      @return $c/12.92;
+    }
+    @else if $c>$thresh {
+      @return pow( (($c+$a)/(1+$a)),2.4);
+    }
+    @else {
+      @return .05;
+    }
+}
 @function luminance($color) {
-  /* REPLACE THIS WITH YOUR REAL FUNCTION */
-  @return 0.5;
+  $rcof: .2126;
+  $gcof: .7152;
+  $bcof: .0722;
+  $redline: linearrgb(red($color)/255);
+  $blueline: linearrgb(blue($color)/255);
+  $greenline: linearrgb(green($color)/255);
+  @return 
+    ($redline*$rcof)+($blueline*$bcof)+($greenline*$gcof);
 }
 
 $white_luminance: luminance(white);
